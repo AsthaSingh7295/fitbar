@@ -37,7 +37,7 @@ body{
 .navbar{
     /* position: absolute; */
     /* top: 0; */
-    position: sticky ;
+    position: fixed ;
     width: 100% !important;
 }
 
@@ -52,7 +52,6 @@ body{
 .dropdown-item:hover{
     background: #000;
 }
-
 
 /* header image */
 .header-image{
@@ -182,17 +181,26 @@ body{
 
 .trainer-img{
     border-radius: 50%;
+    display: flex;
+    justify-content:center;
+
     /*width:50%;*/
     /*height:50%;*/
     width: 200px;
     height: 200px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     margin-top: 2rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    object-position: center;
+    object-fit: contain;
+    overflow-y: hidden;
+    box-shadow: whitesmoke 0 0 10px;
 }
 
 .trainer-img img{
     margin: auto;
+    overflow: hidden;
+
 }
 
 .trainer-name{
@@ -222,7 +230,7 @@ body{
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    /*margin-left: -1em;*/
 }
 
 
